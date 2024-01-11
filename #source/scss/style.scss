@@ -1,0 +1,104 @@
+@import "nullstyle.scss";
+
+* {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+.selector {
+    width: 100px;
+    height: 100px;
+    background: #1ba788;
+
+    &:not(:last-child) {
+        margin: 0 0 10px 0;
+    }
+}
+
+main {
+    padding: 0 0 200px 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.btn-box {
+    display: grid;
+    grid-template-columns: repeat(5, .8fr);
+    gap: 20px;
+    margin: 0 0 40px 0;
+}
+
+.btn {
+    padding: 20px;
+    border-radius: 8px;
+    background: #830c0c;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.test-box {
+    width: 200px;
+    height: 200px;
+}
+
+.heading {
+    font-size: 60px;
+    line-height: 66px;
+    color: forestgreen;
+    margin: 40px;
+    position: relative;
+    margin: 100px 0 50px 0;
+}
+
+.letter {
+    opacity: .5;
+
+}
+
+#box {
+    display: grid;
+    grid-template-columns: repeat(10, .4fr);
+    gap: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 30px;
+    margin: 0 0 100px 0;
+}
+
+.box-item {
+    background: green;
+    height: 200px;
+}
+
+.gallery-scroll {
+    display: flex;
+    gap: 40px;
+    will-change: transform;
+    transition-timing-function: linear;
+    margin: 0 0 20px 0;
+}
+
+
+
+.gallery-scroll__item,
+.gallery-scroll__item2 {
+    width: 480px;
+    flex-shrink: 0;
+}
+
+.gallery-box {
+    margin: 0 0 60px 0;
+}
+
+.gallery-box,
+.gallery-box2 {
+    overflow-x: clip;
+}
+
+@media screen and (max-width: 1200px) {}
