@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
     gsap.to('#slideOne', {
         scrollTrigger: {
             trigger: '.gallery-box',
-            markers: true,
+            //markers: true,
             start: 'center center',
             end: () => '+=' + scrollGalleryWidth,
             pin: true,
